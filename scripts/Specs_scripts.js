@@ -6,7 +6,7 @@
 	 **/
 
 function loadPage(page) {
-    $("#inner_container").load("Views/Specs/" + page + "_Spec.html");
+    $("#inner_container").load("views/specs/" + page + "_Spec.html");
     $("#wowslider-container").hide();
 }
 
