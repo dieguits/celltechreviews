@@ -1,0 +1,112 @@
+<div class="main_container_tittle blue light white-text">
+    <p>Review</p>
+</div>
+<main>
+    </div>
+    <h1>Huawei P20</h1>
+    <h2 class="grey-text">A real pro for photography</h2>
+    <p>
+        <span class="yellow-text strong">
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star-half fa-lg"></i>
+        </span>
+    </p>
+    <div>
+        <img src="../Images/p20.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Features and Design</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                Paying this much for a Huawei phone may seem a tough sell. But great battery life, top specs
+                and some of the most compelling use of computational photography seen in a phone make the Huawei
+                P20 Pro one of the most interesting handsets available.
+
+                Great battery life Ultra-flexible camera Fast face unlock.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/diego-perez.jpg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Diego Perez</span>
+                    <span>
+                        <time datetime="2019-04-05">April 5, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Battery and Camera</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                Its stamina is excellent as well. You can abuse this phone with hours of audio streaming
+                and good chunks of YouTube streaming and it'll still last a full day. We've found it quite
+                easy to finish the day with 40% charge.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/diego-perez.jpg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Diego Perez</span>
+                    <span>
+                        <time datetime="2019-04-05">April 5, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+    
+    <button class="collapsible blue light">Verdict</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The P20 Pro is something of a coup from Huawei. After banging on about AI for six months, 
+                this phone's camera proves it's not all marketing talk after all. It results in the best 
+                handheld ultra low light photos you can get from a phone.
+
+                Samsung offers a sharper screen, better brand cred and more power. However, we actually 
+                appreciate the Huawei P20 Pro's slightly better battery life and improved camera flexibility 
+                more most of the time.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/diego-perez.jpg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Diego Perez</span>
+                    <span>
+                        <time datetime="2019-04-05">April 5, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/wowslider_style.css" />
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<script src="scripts/scripts.js"></script>
+	<script src="scripts/wowslider.js"></script>
+	<script src="scripts/wowslider_script.js"></script>
+
+	<title>CellTechReviews.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<header>
+		<div id="navbar">
+			<div id="page_logo" class="shadow">
+				<span> <img class="img_page_logo" src="images/LogoTransparent.png" alt="" title="" /> </a></span>
+				<!--<h4> Cell Tech Reviews</h4>-->
+			</div>
+
+			<nav id="headerNav">
+				<ul>
+					<li class="home shadow">
+						<span>
+							<a href="#">
+								Home
+							</a>
+						</span>
+					</li>
+					<li class="smartphones shadow">
+						<span>
+							<a href="#">
+								Smartphones
+							</a>
+						</span>
+					</li>
+					<li class="aboutus shadow">
+						<span>
+							<a href="#">
+								About Us
+							</a>
+						</span>
+					</li>
+					<li class="contactus shadow" target="iframe-main">
+						<span>
+							<a href="#">
+								Contact Us
+							</a>
+						</span>
+					</li>
+					<li class="faqs shadow">
+						<span>
+							<a href="#">
+								FAQs
+							</a>
+						</span>
+					</li>
+
+				</ul>
+
+			</nav>
+
+			<div id="search_box" class="shadow">
+				<div id="search_box_content">
+					<form id="form_submit" onsubmit="searchForm()">
+						<span id="srch_box"> Search: <input id="search_tb" type="text" name="search">
+							<a href="#"> <img class="search_box_img_search" alt="Search" src="images/icon_search.png" alt=""
+									title="" />
+							</a>
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="mobile_nav_bar">
+			<div class="dropdown">
+				<button onclick="navButton()" class="dropbtn fa fa-bars"></button>
+				<div id="myDropdown" class="dropdown-content">
+					<a class="home" href="#">Home</a>
+					<a class="smartphones" href="#">Smartphones</a>
+					<a class="aboutus" href="#">About Us</a>
+					<a class="contactus" href="#">Contact Us</a>
+					<a class="faqs" href="#">FAQs</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div>
+
+
+		<!--<div class="div_space"> </div>
+<table id="banner_tb">
+  <tr>
+    <td><img id="banner" src="images/banner.jpg" alt="" title="" /></td>
+  </tr>
+</table>
+<div class="div_space2"> </div>-->
+
+
+		<div class="div_space"> </div>
+
+		<div id="wowslider-container">
+			<div class="ws_images">
+				<ul>
+					<li><a href="#"><img class="sliderimg" src="images/iPHONE_6_Spec.jpg" alt="" id="wows_0" /></a></li>
+					<li><a href="#"><img class="sliderimg" src="images/SamsungGalaxyS10_Spec1.jpg" alt="" id="wows_1" /></a></li>
+					<li><a href="#"><img class="sliderimg" src="images/iPHONE_XR_Spec2.jpg" alt="" id="wows_2" /></a></li>
+					<li><a href="#"><img class="sliderimg" src="images/iPHONE_6_Spec.jpg" alt="" id="wows_3" /></a></li>
+				</ul>
+			</div>
+			<div class="ws_bullets">
+				<div>
+					<a href="#">
+						<!-- <img src="tooltips/slide1new.jpg" alt="" /> -->
+						1</a>
+					<a href="#">
+						<!-- <img src="tooltips/slide2new.jpg"
+								alt="" /> -->
+						2</a>
+					<a href="#">
+						<!-- <img src="tooltips/slide3new.jpg" alt="" /> -->
+						3</a>
+						<a href="#">
+								<!-- <img src="tooltips/slide3new.jpg" alt="" /> -->
+								4</a>
+				</div>
+			</div>
+			<a href="#" class="ws_frame"></a>
+			<div class="ws_shadow"></div>
+		</div>
+
+	</div>
+
+	<div id="page_container">
+		<main>
+			<div id="inner_container" class="shadow">
+				<!-- page content placed here-->
+			</div>
+		</main>
+	</div>
+
+	<footer class="footer">
+
+		<table id="tb_footer">
+			<tr>
+				<td>
+					<h3>Contact Us</h3>
+				</td>
+				<!--<td>
+					<h3>Links</h3>
+				</td> -->
+				<td>
+					<h3>Follow Us</h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<ul>
+						<li><a class="white-text" href="#">1457 London Road, Sarnia, ON N7S 6K4</a></li>
+						<li><a class="white-text" href="#">400-265 Yorkland Blvd, Toronto, ON M2J
+								1S5</a></li>
+						<li><a class="white-text" href="mailto:contactox@letsgo.ca">contacto@letsgo.ca</a></li>
+					</ul>
+				</td>
+				<!--<td>
+					<h3> Links</h3>-->
+				<!--<ul>
+						<li> <a href="#">Home </a> </li>
+						<li> <a href="#"> Smartphones </a> </li>
+						<li> <a href="#"> About Us </a> </li>
+						<li> <a href="#"> Contact Us </a> </li>
+						<li> <a href="#"> FAQs </a> </li>
+					</ul> 
+
+				</td> -->
+				<td>
+					<a href="#"> <img class="img_social" src="images/icon_fb.png" alt="" title="" /> </a>
+					&nbsp;
+					<a href="#"> <img class="img_social" src="images/icon_insta.png" alt="" title="" /> </a>
+					&nbsp;
+					<a href="#"> <img class="img_social" src="images/icon_twitter.png" alt="" title="" /> </a>
+					&nbsp;
+					<a href="#"> <img class="img_social" src="images/icon_youtube.png" alt="" title="" /> </a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<a href="#" class="home">Home </a> | <a href="#" class="smartphones"> Smartphones </a> | <a href="#"
+						class="aboutus"> About Us </a> |
+					<a href="#" class="contactus"> Contact Us </a> | <a href="#" class="faqs"> FAQs </a> | <a href="#"
+						class="partners"> Partners </a> |
+					<a href="#"> Privacy Policy </a> | <a href="#"> Terms of Use </a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					&copy; All Rights Reserved - Cell Tech Reviews 2019
+				</td>
+			</tr>
+		</table>
+
+	</footer>
+
+
+
+</body>
+
+</html>

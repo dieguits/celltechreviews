@@ -1,0 +1,126 @@
+<div class="main_container_tittle blue light white-text">
+    <p>Review</p>
+</div>
+<main>
+    </div>
+    <h1>Iphone XR</h1>
+    <h2 class="grey-text">Great battery life</h2>
+    <p>
+        <span class="yellow-text strong">
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star-half fa-lg"></i>
+        </span>
+    </p>
+    <div>
+        <img src="../Images/iphoneXR.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                Of the three iPhones launched in 2018, the iPhone XR is the most impressive of the lot. 
+                Not because of the strength of the spec – the iPhone XS is slightly ahead in a lot of areas – but 
+                what you're 'saving' by going for this model far outweighs what you're losing. A multitude of colors, 
+                very good battery life and a lower price? If you want a new iPhone, check this one out first.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Design and Screen</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The design of the iPhone XR is both familiar and novel and for those used to the home button, 
+                its loss is going to be quite a jolt. It comes with a benefit though: the iPhone XR is 
+                all-screen on the front (bar the notch at the top) and gives you a more striking feel in the 
+                hand overall.
+
+                The rounded edges, as mentioned, are still in the same Ive-designed vein, feeling nice to 
+                the touch, and the metal back (finished in aluminum and glass, replacing the steel of the 
+                iPhone XS pair) also feels premium.
+                <br><br>
+                The glass on the front of the iPhone XR is meant to be among the strongest in the industry, 
+                and it’s the same material as on the iPhone XS – although we should warn you that we managed 
+                to either scratch or put a hairline fracture (we're not sure which, as it's so slight) on our 
+                iPhone XS within weeks.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Camera</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                If you’re any kind of seasoned iPhone user, you probably won’t be that impressed by the 
+                iPhone XR’s camera. That’s not to say it’s not decent – it’s powerful at times, and often 
+                just takes a good snap without much work – but it doesn't really improve the iPhone’s camera 
+                story that much.
+
+                <br><br>
+                Shorn of the secondary sensor, the iPhone XR’s camera doesn’t quite hit the heights of those 
+                on the XS duo – they offer some truly stunning snaps at times, with incredible detail and brightness, 
+                and while the XR isn’t that far behind it’s not got the same 'wow' factor.
+
+                Again, there’s nothing really to criticize it for, but we never took a photo that we were truly 
+                impressed by and wanted to share. 
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

@@ -1,0 +1,131 @@
+<div class="main_container_tittle blue light white-text">
+    <p>Review</p>
+</div>
+<main>
+    </div>
+    <h1>LG 7One</h1>
+    <h2 class="grey-text">LG embraces Android One in all its unmodded glory</h2>
+    <p>
+        <span class="yellow-text strong">
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star-half fa-lg"></i>
+        </span>
+    </p>
+    <div>
+        <img src="../Images/lg7one.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                The LG G7 One is LG’s first foray into Android One and it’s a decent attempt. Those who have tried, 
+                or have got, the LG G7 ThinQ will notice the phones are practically the same, except for a few 
+                under-the-hood reductions. But this is all about Android One and the clean-cut OS shines on this 
+                handset.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Battery</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The spec that stood out the most on the G7’s unveiling was its battery size. A 3000mAh cell 
+                in a phone with a 1000-nit, quad-HD+ 6.1-inch display was never going to end well. Well, it 
+                actually fared better than I’d anticipated – but remains disappointing nonetheless.
+                <br><br>
+                It was hard to make it through the whole day without the phone requiring a top-up at some 
+                point; the G7 often managed less than 4 hours of actual screen-on time. Even the OnePlus 6, 
+                which I also found to be lacking in the battery department, managed around 5 hours. An hour 
+                of HD Netflix consumed 15%, while an hour of Spotify with the DAC turned on took off 19%.
+
+                There’s support for both types of wireless charging – Qi and PMA – along with fast charging 
+                too. That smaller battery does means that the G7 can get up to full power pretty quickly when 
+                using the supplied cable and plug.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Camera</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                On paper, LG appears to have made improvements to the rear camera, loading it with dual Sony IMX351 
+                sensors. Specifically, you’ll find 16-megapixel, f/1.6 (OIS) 77-degree main unit and a 16-megapixel 
+                f/f1.9, 107-degree secondary sensor on the phone’s rear.
+                <br><br>
+                The main sensor is on a par with the unit that features in the V30S, but the wide-angle sensor has a 
+                higher megapixel count, wider aperture and field of view than its predecessor’s 13-megapixel secondary 
+                sensor.
+
+                The finest thing about the camera is that wide-angle sensor. It’s easily the best use of a secondary 
+                sensor and far more worthwhile as a zoom or monochrome camera. The photos captured with the wide-angle 
+                camera are varied, with it opening up many more shooting options. Landscape shots look great, as do 
+                photos taken in stadiums and the like. You do lose some of the low-light quality with this secondary 
+                sensor, but I’m still glad of its inclusion.
+                <br><br>
+                The photos with the regular ‘main’ 16-megapixel camera are decent: detailed, nicely coloured and with 
+                good dynamic range. It’s just a shame that there isn’t a massive jump between this and last year’s G6 
+                and V30. The main issue seems to be exposure: photos are often too bright and the auto-HDR mode doesn’t 
+                do much to improve matters.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

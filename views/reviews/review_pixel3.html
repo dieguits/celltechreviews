@@ -1,0 +1,114 @@
+<div class="main_container_tittle blue light white-text">
+    <p>Review</p>
+</div>
+<main>
+    </div>
+    <h1>Google Pixel 3</h1>
+    <h2 class="grey-text">The killer made by Google</h2>
+    <p>
+        <span class="yellow-text strong">
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star-half fa-lg"></i>
+        </span>
+    </p>
+    <div>
+        <img src="../Images/pixel.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                The Google Pixel is an excellent flagship phone that's only let down by mediocre battery 
+                life and some last-gen specs. The price has recently dropped, making the Pixel is a breath 
+                of fresh Google air in a world of Android over-complication.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Design and Display</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The Google Pixel design is premium, if slightly odd. There's a metal body, but Google has 
+                added a block of glass around the fingerprint scanner and camera on the rear. While this gives 
+                the Pixel a unique look, the glass finish does look and feel a little like plastic.
+
+                That detracts slightly from the overall appeal of the phone, although the bottom portion of 
+                the handset is cool metal – and that's the bit which is in contact with your palm most of the 
+                time. 
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Batery and Camera</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The Google Pixel battery life is nothing special. If you’re careful with your usage you’ll get 
+                a full day out of the phone, but we found that given moderate use a mid-evening charge was required 
+                to ensure we made it to bedtime without a flat battery. 
+
+                The Pixel squeezes in a non-removable 2,770mAh power pack. That's bigger than the battery in 
+                the iPhone 7 (1,960mAh), but smaller than those in the Samsung Galaxy S7 (3,000mAh) and 
+                HTC 10 (3,000mAh).  
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

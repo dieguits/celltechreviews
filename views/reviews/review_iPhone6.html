@@ -1,0 +1,131 @@
+<div class="main_container_tittle blue light white-text">
+    <p>Review</p>
+</div>
+<main>
+    </div>
+    <h1>Iphone 6</h1>
+    <h2 class="grey-text">Same frame but with a brilliant new touchscreen</h2>
+    <p>
+        <span class="yellow-text strong">
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star-half fa-lg"></i>
+        </span>
+    </p>
+    <div>
+        <img src="../Images/iphone6.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                Apple's done what we all expected - finely balanced its 'S' phone. 3D Touch is a genuine 
+                innovation, and the phone works fluidly at nearly every task - but it's very similar to 
+                2014's model.
+                <br/><br/>
+                The iPhone 6S is no longer available from Apple and there are plenty of newer alternatives 
+                such as the iPhone XS, but the 6S can still be found in some stores and at a much lower price 
+                than it once had. You can also update it to the latest software - iOS 12.
+
+                Apple's iPhone 6S pitch was 'the only thing that's changed is everything', highlighting that 
+                it knows this is phone looks an awful lot like the previous model.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">3D Touch</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                Apple's been hard at work integrating the Force Touch technology from its Watch and new MacBook Pro 
+                into the iPhone 6S, but has decided that it needed to give it a new name: 3D Touch.
+                <br><br>
+                In terms of all the changes offered by the new iPhone, this is definitely the one you should 
+                pay most attention to. Not just because it's the most multi-faceted, but also because it's 
+                the only change that I feel confident in stating will alter the way we use our iPhones forever.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Camera</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The camera app on the iPhone 6S is very similar to previous years, with a few small tweaks 
+                to add in new features.
+
+                The first is Live Photos, which takes a 1.5 second picture before and after the snap and 
+                turns it into a small video you can play to capture the memory. Apple's clearly realised 
+                that you can only do so much to enhance the camera in terms of image quality and started 
+                to work out how to capture more of the moment you're after.
+
+                <br><br>
+                It's hardly a new idea though - although the integration here is impressive and is less 
+                onerous than trying to use the Zoe mode on the HTC One series, for instance. The speed with 
+                which you can take a photo hasn't diminished either, so you can take multiple pictures in 
+                quick succession and the iPhone's A9 processor can work out what needs to be saved to create 
+                the Live Photo.
+
+                Viewing them is simple too - when in the gallery just prod the screen harder to activate 3D 
+                Touch and the memory will come to life. Apple's demo showed beautiful images of waterfalls 
+                and children smiling, and it seemed the option seemed to really capture the warmth of the situation.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/wayne.jpeg">
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Wayne Palmer</span>
+                    <span>
+                        <time datetime="2019-04-05">Jan 15, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

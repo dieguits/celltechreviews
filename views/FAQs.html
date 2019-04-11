@@ -1,0 +1,133 @@
+<input type="hidden" id="pageIdent"  value="faqsPage">
+<table class="page_header">
+  <tr>
+    <td>Frequently Asked Questions</td>
+  </tr>
+</table>
+
+<table id="faqTB">
+
+          <tbody>
+                 <!--row 1 -->
+                  <tr class="faqqstrow">
+                      <td title="Click to view More" class="details-control" data-rownum="1" style="text-align: center;cursor: pointer"> 
+					  <span id="details-control_1" class="fa fa-angle-double-down fa-2x" style="color:#5BB75B"> <!--<img class="img_faq_cascade" src="images/arrow_down.png"
+										alt="" title="" />--> </span>
+					  </td> <!--  column for cascade -->
+                      <td>
+							Do you sell phones or tablets?
+                      </td>  
+                </tr>
+                  <tr id="cascade_tb_row_1" class="faqansrow" style="display:none">
+                      <td></td> <!--column for cascade-->
+                      <td>
+                          <div id="cascade_tb_sub_row_1" style="display:none">
+                              No we do not.
+						  </div>
+						  </td>
+                      
+					  </tr>
+				<!--row 2 -->
+				<tr class="faqqstrow">
+                      <td title="Click to view More" class="details-control" data-rownum="2" style="text-align: center;cursor: pointer"> <span id="details-control_2" class="fa fa-angle-double-down fa-2x" style="color:#5BB75B"></span>
+					  </td> <!--  column for cascade -->
+                      <td>
+							Can I send you my phone for repairs or upgrades?
+                      </td>  
+                </tr>
+                  <tr id="cascade_tb_row_2" class="faqansrow" style="display:none">
+                      <td></td> <!--column for cascade-->
+                      <td>
+                          <div id="cascade_tb_sub_row_2" style="display:none">
+                              We only provide reviews and technical specifications for mobile phones.
+						  </div>
+						  </td>
+                      
+					  </tr>
+
+				<!--row 3 -->
+				<tr class="faqqstrow">
+                      <td title="Click to view More" class="details-control" data-rownum="3" style="text-align: center;cursor: pointer"> <span id="details-control_3" class="fa fa-angle-double-down fa-2x" style="color:#5BB75B"></span>
+					  </td> <!--  column for cascade -->
+                      <td>
+							What is the price of phone X in X country?
+                      </td>  
+                </tr>
+                  <tr id="cascade_tb_row_3" class="faqansrow" style="display:none">
+                      <td></td> <!--column for cascade-->
+                      <td>
+                          <div id="cascade_tb_sub_row_3" style="display:none">
+                              We only provide reviews and technical specifications for mobile phones.
+						  </div>
+						  </td>
+                      
+					  </tr>
+				
+				<!--row 4 -->
+				 <tr class="faqqstrow">
+                      <td title="Click to view More" class="details-control" data-rownum="4" style="text-align: center;cursor: pointer"> <span id="details-control_4" class="fa fa-angle-double-down fa-2x" style="color:#5BB75B"></span>
+					  </td> <!--  column for cascade -->
+                      <td>
+							Which Cell phone is the best phone?
+                      </td>  
+                </tr>
+                  <tr id="cascade_tb_row_4" class="faqansrow" style="display:none">
+                      <td></td> <!--column for cascade-->
+                      <td>
+                          <div id="cascade_tb_sub_row_4" style="display:none">
+                              We only provide reviews for mobile phones we have available on our website, to better find out which phone is best for you
+							  please visit the mobile phone review or technical specificaitons section of our website.
+						  </div>
+						  </td>
+                      
+					  </tr>
+				<!--row 5 -->
+				<tr class="faqqstrow">
+                      <td title="Click to view More" class="details-control" data-rownum="5" style="text-align: center;cursor: pointer"> <span id="details-control_5" class="fa fa-angle-double-down fa-2x" style="color:#5BB75B"></span>
+					  </td> <!--  column for cascade -->
+                      <td>
+							Which phone has the best camera?
+                      </td>  
+                </tr>
+                  <tr id="cascade_tb_row_5" class="faqansrow" style="display:none">
+                      <td></td> <!--column for cascade-->
+                      <td>
+                          <div id="cascade_tb_sub_row_5" style="display:none">
+                              Please visit the technical reviews section of our website to review camera quality for the phones we have 
+							  available on our site.
+						  </div>
+						  </td>
+                      
+					  </tr>
+
+          </tbody>
+      </table>
+	  
+
+<script>
+
+//author:Sherwayne Palmer
+$("#faqTB").on('click', 'td.details-control', function () {
+
+        var row = $(this).attr('data-rownum');
+		
+
+        var upclass = 'fa fa-angle-double-up';
+        var downclass = 'fa fa-angle-double-down';
+		
+        $('#cascade_tb_sub_row_' + row).slideDown("medium"); //apply effect to div
+        if ($('#details-control_' + row).hasClass(downclass)) {
+            $('#details-control_' + row).removeClass(downclass);
+            $('#details-control_' + row).addClass(upclass);
+            $('#cascade_tb_row_' + row).show(); //show second row		
+        }
+        else {
+            $('#cascade_tb_sub_row_' + row).slideUp("medium"); //apply effect to div
+            $('#cascade_tb_sub_row_' + row).hide();
+            $('#cascade_tb_row_' + row).hide(); //hide  first row
+            $('#details-control_' + row).removeClass(upclass);
+            $('#details-control_' + row).addClass(downclass);
+        }
+    });
+	
+</script>

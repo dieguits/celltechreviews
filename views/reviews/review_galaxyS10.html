@@ -1,0 +1,130 @@
+<div class="main_container_tittle blue light white-text">
+    <p>Review</p>
+</div>
+<main>
+    </div>
+    <h1>Samsung Galaxy S10</h1>
+    <h2 class="grey-text">High screen-to-body ratio In-screen</h2>
+    <p>
+        <span class="yellow-text strong">
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star fa-lg"></i>
+            <i class="fa fa-star-half fa-lg"></i>
+        </span>
+    </p>
+    <div>
+        <img src="../Images/galaxys10.jpg" class="img_home_middle" />
+    </div>
+
+    <button class="collapsible blue light active">Introduction</button>
+    <div class="content_colla grey light" style="display: block;">
+        <article class="left">
+            <p>
+                The Galaxy S10 is a fitting 10th anniversary phone for Samsung and its storied S series.
+                It delivers on change with a novel-looking Infinity-O screen so large it displaces the
+                front camera, and a triple-lens rear camera that takes ultra-wide photos. Its in-screen
+                fingerprint sensor tech should serve you well, while its Wireless PowerShare could serve
+                your friends well. That’s a lot of change – just know that it comes at a high price and
+                the Galaxy S10e and S10 Plus flank it from both sides of the coin as better options.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Batery and Camera</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                Samsung wants you to take photos at any angle, so the Galaxy S10 has a triple-lens camera
+                on back with a 12MP regular lens, 12MP optically zoomed telephoto lens, and a brand new 16MP
+                ultra-wide lens.
+
+                We found that the Samsung Galaxy S10 and S10 Plus have the same cameras – on the back at least.
+                Here's our mix of shots during of month and a half of testing.
+                <br/><br/>
+                The main S10 camera exhibit punchy, Instagram-ready colors and looks better than the muted photos
+                out of an iPhone in most cases. It's one of the best camera phones out now. However, its HDR prowess
+                can, at times, blow out bright backgrounds during daytime shots. And lowlight, while good enough,
+                does have serious noise reduction to reduce grain. That only leads to a lot of skin smoothing, as if
+                you put on beauty mode when you didn't.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+    <div class="divider"></div>
+
+    <button class="collapsible blue light">Veredict</button>
+    <div class="content_colla grey light">
+        <article class="left">
+            <p>
+                The Galaxy S10 is a deserved 10th anniversary phone for Samsung and its storied S series.
+                Its new display type lays out more pixels across less body, the phone has a triple-lens
+                camera so you can now take ultra-wide photos, and inside you'll find a bigger battery
+                surrounded by beefier specs.
+                <br /><br />
+                You’ll like all of these powerful features, while your friends will like the new Wireless
+                PowerShare perk – it helps them out more than you. The S10 marks an anniversary, but it also
+                marks something a bit different among smartphones. It disrupts the sameness of smartphones just
+                enough to become a tempting upgrade.
+                <br /><br />
+                But the real winner this upgrade cycle is the Galaxy S10 Plus – if you can handle the price
+                and its lager 6.4-inch screen size. It's an easy choice for us if you're deciding between the two.
+                The Galaxy S10 is too expensive (and got the largest price hike this year among Samsung's new phones)
+                not to consider the ultimate upgrade. And, if the price of either Samsung phone is giving you
+                second thoughts, this is where the cheaper Galaxy S10e plays an important role.
+            </p>
+        </article>
+        <aside class="right text-center">
+            <img class="photo_style_author" src="../Images/deivid.png" />
+            <p class="no-margin">
+                <a href="#!">
+                    <span class="block">Deivid Mafra</span>
+                    <span>
+                        <time datetime="2019-04-05">Feb 24, 2019</time>
+                    </span>
+                </a>
+            </p>
+        </aside>
+    </div>
+
+</main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
