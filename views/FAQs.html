@@ -1,4 +1,40 @@
+<!DOCTYPE html>
 <!-- This website template was created by: Deivid Mafra, Sherwayne Palmer, Diego Perez, Yash Deepak 05/03/2019 -->
+<html lang="en">
+<head>
+<title>FAQs</title>
+<meta charset="utf-8">
+
+<script>
+
+//author:Sherwayne Palmer
+$("#faqTB").on('click', 'td.details-control', function () {
+
+        var row = $(this).attr('data-rownum');
+		
+
+        var upclass = 'fa fa-angle-double-up';
+        var downclass = 'fa fa-angle-double-down';
+		
+        $('#cascade_tb_sub_row_' + row).slideDown("medium"); //apply effect to div
+        if ($('#details-control_' + row).hasClass(downclass)) {
+            $('#details-control_' + row).removeClass(downclass);
+            $('#details-control_' + row).addClass(upclass);
+            $('#cascade_tb_row_' + row).show(); //show second row		
+        }
+        else {
+            $('#cascade_tb_sub_row_' + row).slideUp("medium"); //apply effect to div
+            $('#cascade_tb_sub_row_' + row).hide();
+            $('#cascade_tb_row_' + row).hide(); //hide  first row
+            $('#details-control_' + row).removeClass(upclass);
+            $('#details-control_' + row).addClass(downclass);
+        }
+    });
+	
+</script>
+
+</head>
+
 <input type="hidden" id="pageIdent"  value="faqsPage">
 <table class="page_header">
   <tr>
@@ -103,32 +139,5 @@
 
           </tbody>
       </table>
-	  
+</html>  
 
-<script>
-
-//author:Sherwayne Palmer
-$("#faqTB").on('click', 'td.details-control', function () {
-
-        var row = $(this).attr('data-rownum');
-		
-
-        var upclass = 'fa fa-angle-double-up';
-        var downclass = 'fa fa-angle-double-down';
-		
-        $('#cascade_tb_sub_row_' + row).slideDown("medium"); //apply effect to div
-        if ($('#details-control_' + row).hasClass(downclass)) {
-            $('#details-control_' + row).removeClass(downclass);
-            $('#details-control_' + row).addClass(upclass);
-            $('#cascade_tb_row_' + row).show(); //show second row		
-        }
-        else {
-            $('#cascade_tb_sub_row_' + row).slideUp("medium"); //apply effect to div
-            $('#cascade_tb_sub_row_' + row).hide();
-            $('#cascade_tb_row_' + row).hide(); //hide  first row
-            $('#details-control_' + row).removeClass(upclass);
-            $('#details-control_' + row).addClass(downclass);
-        }
-    });
-	
-</script>
