@@ -1,9 +1,9 @@
-	/**
-	 * Load Specs pages
-	 * 
-	 * date: 04/07/2019
-	 * author: Deivid Mafra
-	 **/
+/**
+  * Load specs javascript pages
+  * 
+  * date: 04/07/2019
+  * author: Deivid Mafra
+  **/
 
 function loadPage(page) {
     $("#inner_container").load("views/specs/" + page + "_Spec.html");
@@ -39,3 +39,18 @@ $("#Spec_HP20").click(function(e){
     e.preventDefault();
     loadPage("HP20");
 });
+
+$(".r_HuaweiP20").click(function(e){
+    e.preventDefault();        
+    goPage("HuaweiP20");
+});
+
+$(".r_galaxyS10").click(function(e){
+    e.preventDefault();        
+    goPage("galaxyS10");
+});
+
+function goPage(identifier) {
+    $("#inner_container").load("views/reviews/review_" + identifier + ".html");
+    $("#wowslider-container").hide();
+}
